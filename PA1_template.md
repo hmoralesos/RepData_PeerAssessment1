@@ -53,7 +53,7 @@ Transform variable date
     stepsByDay<-data.frame(sapply(split(data$steps,data$date),sum))
     hist(stepsByDay[,1],xlab="Number of step",main="Histogram of the total number of steps taken each day")
 
-![](PA1_template_-_Copy_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-4-1.png)
 
 3. Mean and median number of steps taken each day
 -------------------------------------------------
@@ -202,7 +202,7 @@ Transform variable date
     axis(2)
     box()
 
-![](PA1_template_-_Copy_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-6-1.png)
 
 5. The 5-minute interval that, on average, contains the maximum number of steps
 -------------------------------------------------------------------------------
@@ -234,7 +234,7 @@ Replace NA for the mean
     stepsByDay2<-data.frame(sapply(split(data$steps,data$date),sum))
     hist(stepsByDay2[,1],xlab="Number of steps", main="Histogram of the total number of steps taken each day")
 
-![](PA1_template_-_Copy_files/figure-markdown_strict/unnamed-chunk-10-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-10-1.png)
 
 The mean and median total number of steps taken per day.
 
@@ -389,4 +389,4 @@ The mean and median total number of steps taken per day.
     meanWeekday<-data.frame(sapply(split(weekday2$steps,weekday2$interval),mean))
     plot(rownames(meanWeekday),meanWeekday[,1],type="l",xlab="Interval",ylab="Number of steps",main="Weeday")
 
-![](PA1_template_-_Copy_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
